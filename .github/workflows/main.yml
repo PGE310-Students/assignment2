@@ -13,7 +13,7 @@ jobs:
         shell: bash -l {0}
         run: |
           curl \
-          --header 'Authorization: token ${{secrets.PGE383_SECRET_TOKEN}}' \
+          --header 'Authorization: token ${{secrets.PGE310_SECRET_TOKEN}}' \
           --header 'Accept: application/vnd.github.v3.raw' \
           -O --location "https://api.github.com/repos/PGE310/${ASSIGNMENT}/contents/test.py"
       - name: Run Tests 
